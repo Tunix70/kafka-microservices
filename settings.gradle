@@ -1,0 +1,7 @@
+rootProject.name = "kafka-microservices"
+include ':kafka-data-consumer'
+include ':kafka-data-generator'
+
+project(":kafka-data-consumer").projectDir = file("kafka-microservices/kafka-data-consumer")
+project(":kafka-data-generator").projectDir = file("kafka-microservices/kafka-data-generator")
+
